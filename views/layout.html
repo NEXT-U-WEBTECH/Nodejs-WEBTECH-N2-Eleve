@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Gestion cours - plannig (Nodejs) {{fullUrl}}</title>
+        <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://project-gestion-plannig-next-u.megaformation.repl.co/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>        
+   <!-- Core theme JS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://project-gestion-plannig-next-u.megaformation.repl.co/js/scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+               {% include 'menu.html'  %}
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            {% include 'nav.html'  %}
+            <!-- Page content-->
+            <div class="container-fluid">
+                    {% block content %}
+
+                    {% endblock %}
+
+            </div>
+        </div>
+    </div>  
+     {% include 'footer.html'  %}
+</body>
+
+</html>
