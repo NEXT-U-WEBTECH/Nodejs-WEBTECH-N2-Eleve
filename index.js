@@ -63,11 +63,11 @@ router.get("/listing_profs", function(req, res) {
 })
 
 
-router.get("/display_fiche_prof/:idProf", function(req, res) {})
+// router.get("/display_fiche_prof/:idProf", function(req, res) {})
 
-router.get("/add_fiche_prof", function(req, res) {})
+// router.get("/add_fiche_prof", function(req, res) {})
 
-router.post("/add_fiche_prof", urlencodedParser, function(req, res) {})
+// router.post("/add_fiche_prof", urlencodedParser, function(req, res) {})
 
 
 app.use("/", router);
