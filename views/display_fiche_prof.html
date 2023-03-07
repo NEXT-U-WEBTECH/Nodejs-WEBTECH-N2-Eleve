@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+  <div class="d-flex" id="wrapper">      
+       
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">           
+            <!-- Page content-->
+            <div class="container-fluid" style="margin-top:2%">                           
+
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                     <th scope="row">{{ objectProf["id"] }}</th>
+                                </tr>
+                               <tr>                                 
+                                    <th scope="col">NOM</th>
+                                   <td>{{ objectProf["nom"] }}</td>
+                                </tr>
+                               <tr>
+                                    
+                                    <th scope="col">PRENOM</th>
+                                    <td>{{ objectProf["prenom"] }}</td>
+                                </tr>
+                               <tr>                               
+                                    <th scope="col">DATE CREATION PROFIL</th>
+                                    <td>{{ objectProf["date_creation_profil"] }}</td>
+                                </tr>
+                            
+                            </thead>                            
+
+                        </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
